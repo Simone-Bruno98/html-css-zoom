@@ -5,6 +5,7 @@ body{
     height: 100%;
     width: 100%;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 main{
     background-color: black;
@@ -29,7 +30,7 @@ main{
 .personname{
     margin: 0;
     padding: 1% 1%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     display: inline-block;
     position: absolute;
     bottom: 0;
@@ -43,49 +44,125 @@ main{
 footer{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    bottom: 0px;
+    background-color: #222222;
+    overflow: hidden;
 }
 .left{
     order: 1;
     align-self: center;
+    flex-wrap: nowrap;
+    display: flex;
+
 }
 .center{
     order: 2;
     align-self: center;
-    flex-basis: auto;
-
+    display: flex;
 
 }
 .right{
     order: 3;
     align-self: center;
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 .icon{
     height: auto;
-    width: auto;
     text-align: center;
     color: white;
-    display: inline-block;
-    width: 4%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: center;
+    margin: 0px 4px;
 }
-.icon i,.lowertext{
-
+.iconsmall{
+    height: auto;
+    text-align: center;
+    color: white;
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: flex-start;
+}
+.iconbig{
+    height: auto;
+    text-align: center;
+    color: white;
+    display: flex;
+    width: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: center;
+    margin: 0px 4px;
+}
+.iconbig .lowertext{
+    width: 110px;
+}
+.left .iconsmall{
+    padding-left: 10px;
+    
 }
 .icon i{
     font-size: 30px;
-    padding-bottom: 5px;
+
+}
+.iconbig i{
+    font-size: 30px;
 }
 .icon .lowertext{
-    font-weight: 700;
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.iconbig .lowertext{
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 12px;
 }
 .endmeeting{
-    background-color: green;
+    background-color: #4A4A4A;
     color: red;
-    font-size: 30px;
+    font-size: 13px;
     padding: 0% 0%;
+    width: 150px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    vertical-align: middle;
+}
+    
 
+#green{
+    color: #4BC800;
+    width: 182px;
+}
+
+.topbuttons i,span{
+    font-size: 13px;
+    color: white;
+}
+.topleftbigbutton,.topleftsmallbutton{
+    background-color: #4A4A4A;
+    padding: 4px 6px;
+    display: inline-block;
+    border-radius: 7%;
+    position: relative;
+    top: 10px;
+    left: 90%;
 }
 
 
@@ -97,13 +174,3 @@ footer{
 
 
 
-
-
-
-footer{
-    position: fixed;
-    height: 8%;
-    width: 100%;
-    bottom: 0px;
-    background-color: grey;
-}

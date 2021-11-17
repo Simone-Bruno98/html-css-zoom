@@ -10,6 +10,13 @@
 </head>
 <body>
     <main>
+        <section class="topbuttons">
+            <div class="topleftbigbutton"><i class="fas fa-th"></i> <span>Speaker View</span>
+            </div>
+            <div class="topleftsmallbutton">
+                <i class="fas fa-square"></i>
+            </div>
+        </section>
         <section class="allpeople">
             <section class="person">
                 <img src="https://picsum.photos/246/146" alt="">
@@ -226,9 +233,15 @@
                 <i class="fas fa-microphone"></i> 
                 <div class="lowertext">Mute</div>
             </div>
-            <div class="icon">
-                <i class="fas fa-video"></i>
+            <div class="iconsmall">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div class="iconbig">
+                <i class="fas fa-video"></i> 
                 <div class="lowertext">Stop Video</div>
+            </div>
+            <div class="iconsmall">
+                <i class="fas fa-chevron-up"></i>
             </div>
         </div>
         <div class="center">
@@ -236,7 +249,7 @@
                 <i class="fas fa-user-plus"></i> 
                 <div class="lowertext">Invite</div>
             </div>
-            <div class="icon">
+            <div class="iconbig">
                 <i class="fas fa-user-friends"></i> 
                 <div class="lowertext">Manage Participants</div>
             </div>
@@ -244,9 +257,12 @@
                 <i class="fas fa-chart-bar"></i> 
                 <div class="lowertext">Polling</div>
             </div>
-            <div class="icon">
+            <div class="iconbig" id="green">
                 <i class="fas fa-share-square"></i> 
                 <div class="lowertext">Share Screen</div>
+            </div>
+            <div class="iconsmall">
+                <i class="fas fa-chevron-up"></i>
             </div>
             <div class="icon">
                 <i class="fas fa-comment"></i> 
@@ -256,7 +272,7 @@
                 <i class="fas fa-record-vinyl"></i> 
                 <div class="lowertext">Record</div>
             </div>
-            <div class="icon">
+            <div class="iconbig" id="breakout">
                 <i class="fas fa-th-large"></i> 
                 <div class="lowertext">Breakout Rooms</div>
             </div>
